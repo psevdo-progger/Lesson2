@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/showTimeDialogButton"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:onClick="onClickShowTimeDialog"
+        android:text="Show Time Dialog"
+        app:layout_constraintBottom_toTopOf="@+id/showDateDialogButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showDialogButton"
+        android:layout_width="167dp"
+        android:layout_height="71dp"
+        android:onClick="onClickShowDialog"
+        android:text="Show dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showProgressDialogButton"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <Button
+        android:id="@+id/showDateDialogButton"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:onClick="onClickShowDateDialog"
+        android:text="Show Date Dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showProgressDialogButton"
+        android:layout_width="211dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="70dp"
+        android:onClick="onClickShowProgressDialog"
+        android:text="Show Progress Dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showDateDialogButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
